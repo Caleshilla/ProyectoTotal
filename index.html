@@ -8,10 +8,94 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <script src="main.js"></script>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
+    <!-- nuevo menu -->
     <header>
-      <section id = "menu">
+      <nav>
+        <a href="#">
+          <img class="logo" src="LogoPosadas1.jpg" alt="logo">
+        </a>
+        <ul class="enlaces-menu">
+          <li><a href="#">Inicio</a>
+          <li><a href="#">Acerca de</a>
+          <li><a href="#">Linea de Negocios</a>
+          <li><a href="#">Tienda</a>
+          <li><a href="#">Contacto</a>
+        </ul>
+        <button class="ham" type="button">
+          <span class="br-1"></span>
+          <span class="br-2"></span>
+          <span class="br-3"></span>
+        </button>
+      </nav>
+    </header>
+      <div class="contenedor">
+        <div class="contenedor-presentacion">
+        <div class="card" style="background-image: url('cafe.jpg');">
+      </div>
+      <div class="card" style="background-image: url('./Imagenes/lapices.jpg');">
+      </div>
+      <div class="card" style="background-image: url('./Imagenes/oficina.jpg');">
+      </div>
+      <div class="card" style="background-image: url('./Imagenes/almacen.jpg');">
+      </div>
+      <div class="card" style="background-image: url('./Imagenes/works.jpg');">
+      </div>
+      <div class="card" style="background-image: url('./Imagenes/cafe1.jpg');">
+      </div>
+    </div>
+    <div class="banner" style="background-image: url('./Imagenes/net1.jpg');">
+      <h1>Líneas de Negocio</h1>
+      <ul>
+        <li>Papelería</li>
+        <li>Insumos</li>
+        <li>Tecnología</li>
+        <li>Cafetería</li>
+        <li>Limpieza</li>
+      </ul>
+    </div>
+
+    <div class="contenedor-todo">
+      
+      <input type="radio" id="1" name="imagen-slide" hidden/>
+      <input type="radio" id="2" name="imagen-slide" hidden/>
+      <input type="radio" id="3" name="imagen-slide" hidden/>
+
+      <div class="slide">
+          <div class="item-slide">
+            <img src="Imagenes/banner1.jpg">
+          </div>
+          <div class="item-slide">
+            <img src="Imagenes/banner3.jpg">
+          </div>
+          <div class="item-slide">
+            <img src="Imagenes/banner_4.jpg">
+          </div>
+      </div>
+
+      <div class="pagination">
+        <label class="pagination-item" for="1">
+          <img src="Imagenes/banner1.jpg">
+        </label>
+        <label class="pagination-item" for="2">
+          <img src="Imagenes\banner3.jpg">
+        </label>
+        <label class="pagination-item" for="3">
+          <img src="Imagenes/banner_4.jpg">
+        </label>
+      </div>
+    </div>
+
+    <footer>
+      <div class="Logogris"> 
+        <img class="w-10" src="https://totaloffice.mx/skin/frontend/alodigitalstore/default/images/logo_total_office_193x38.png" alt="prueba">
+      </div>
+    </footer>
+    <!-- <header> -->
+      <!-- <section id = "menu">
         <ul>
           <a href="#">Inicio</a>
           <a href="#">Acerca de</a>
@@ -20,27 +104,24 @@
           <a href="#">Socios de Negocios</a>
           <a href="#">Contacto</a>
         </ul>
-      </section>
-    </header>
+      </section> -->
+    <!-- </header -->
+     
     <!--Barra de navegación-->
-    <nav id="navegacion">
+    <!-- <nav id="navegacion">
       <ul>
         <li>Inicio</li>
-        <li>Acerca de</details></li>
+        <li>Acerca de</li>
         <li>Tienda</li>
         <li>Línea de Negocios</li>
         <li>Contacto</li>
         <li>Socios de Negocios</li>
       </ul>
-    </nav>
+    </nav> -->
     <!--Logo-->
-    <section id = "galeria">
-      <div id="logo" class="logo-container">
-        <img src="https://totaloffice.mx/skin/frontend/alodigitalstore/default/images/logo_total_office_193x38.png">
-      </div>
-    </section>
+    
     <!--Carrusel-->
-    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+    <!-- <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item bg-primary" data-bs-interval="3000">
           <img src="https://totaloffice.mx/media/magiccart/magicslider/cache/870x570//b/a/banner_4.jpg">
@@ -51,9 +132,9 @@
         <div class="carousel-item  bg-primary" data-bs-interval="3000">
           <img src="https://totaloffice.mx/media/magiccart/magicslider/cache/870x570//b/a/banner1_1.jpg" class="d-block w-50" alt="flor">
         </div>
-      </div>
+      </div> -->
       <!--Botón carrusel-->
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
       </button>
@@ -61,9 +142,9 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
-    </div>
+    </div> -->
       <!--Menú desplegable-->
-    <div class="accordion container" id="accordionExample">
+    <!-- <div class="accordion container" id="accordionExample">
       <div class="accordion-item">
         <h2 class="accordion-header">
           <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -106,14 +187,8 @@
             </div>
           </div>
         </div>
+      </div> -->
       </div>
-      <footer>
-        <p>Footer</p>
-        <div class="Logogris"> 
-          <img class="w-10" src="https://totaloffice.mx/skin/frontend/alodigitalstore/default/images/logo_total_office_193x38.png" alt="prueba">
-        </div>
-      </footer>
-    </div>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
   </body>
 </html>
